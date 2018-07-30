@@ -52,7 +52,7 @@ def id_to_user():
             rid_to_user[line[0]] = {}
             rid_to_user[line[0]]['Identificador'] = line[0]
             rid_to_user[line[0]]['Idade'] = line[1]
-            rid_to_user[line[0]]['Gênero'] = line[2]
+            rid_to_user[line[0]]['Genero'] = line[2]
     return rid_to_user
 
 # Get 10 recommended movies

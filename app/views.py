@@ -19,4 +19,4 @@ def my_form_post():
     movies = model.recommended_json(int(userId))
     neighbors = model.get_K_neighbors(int(userId), 3)
     return render_template('results.html', movies=movies, neighbors=neighbors,
-    colnames = ['Identificador', 'Idade', 'Gênero'])
+    colnames = ['Identificador', 'Idade', 'Genero'])
