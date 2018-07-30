@@ -18,7 +18,7 @@ trainset, testset = train_test_split(data, test_size=.15)
 algo = KNNBaseline(k=25, sim_options={'name': 'pearson_baseline', 'user_based': True})
 
 # Run 10-fold cross-validation and print results.
-#cross_validate(algo, data, measures=['RMSE', 'MAE'], cv=10, verbose=True)
+cross_validate(algo, data, measures=['RMSE', 'MAE'], cv=10, verbose=True)
 
 # Training the model
 algo.fit(trainset)
